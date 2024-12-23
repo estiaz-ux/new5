@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com/3.2.0"></script>
+  <script src="./tailwind.config.js"></script>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="bg-[#f9f7f3] h-[880px] relative overflow-hidden">
+    <!-- Navbar -->
+    <div class="bg-[#f9f7f3] pt-6 pb-6 flex flex-row gap-[329px] items-center justify-center w-[1440px] fixed left-0 top-0 z-10">
+      <div class="bg-[#b4f461] rounded-lg pt-3 pr-8 pb-3 pl-8 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+        <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">Blog</div>
+      </div>
+      <div class="flex flex-row gap-4 items-center justify-center shrink-0 relative">
+        <div class="shrink-0 w-12 h-12 relative overflow-hidden">
+          <img class="h-[auto] absolute left-0 top-0 overflow-visible" src="group0.svg"/>
+        </div>
+        <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">Donate Bangladesh</div>
+      </div>
+      <div class="flex flex-row gap-3 items-center justify-start shrink-0 relative">
+        <div class="shrink-0 w-7 h-7 relative overflow-hidden">
+          <img class="h-[auto] absolute left-0 top-0 overflow-visible" src="currency0.svg"/>
+        </div>
+        <div id="navbarAmount" class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Medium',_sans-serif] text-xl font-medium relative">9860000BDT</div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="bg-[#ffffff] pt-20 pr-[150px] pb-20 pl-[150px] flex flex-row gap-6 items-center justify-start w-[1440px] h-[1188px] absolute left-[50%] top-[137px]" style="translate: -50%">
+      <div class="flex flex-col gap-8 items-center justify-center flex-1 relative">
+        <div class="flex flex-row gap-4 items-center justify-start shrink-0 relative">
+          <div class="bg-[#b4f461] rounded-lg pt-4 pr-8 pb-4 pl-8 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+            <button class="shadow-button">
+              <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">Donation</div>
+            </button>
+            
+          </div>
+          <div class="rounded-lg border-solid border-[rgba(17,17,17,0.30)] border pt-4 pr-8 pb-4 pl-8 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+            <div class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Medium',_sans-serif] text-xl font-medium relative">
+              <a href="history.html">
+                <button class="shadow-button">History</button>
+              </a>
+            </div>
+          </div>
+           </div>
+
+<div class="flex flex-row gap-6 items-center justify-start self-stretch shrink-0 relative">
+          <div class="bg-[#ffffff] rounded-2xl border-solid border-[rgba(17,17,17,0.10)] border p-8 flex flex-row gap-8 items-start justify-start flex-1 relative">
+            <img class="rounded-xl self-stretch flex-1 relative" style="object-fit: cover" src="rectangle-10.png"/>
+            <div class="flex flex-col gap-6 items-start justify-start flex-1 relative">
+              <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+                <div class="bg-[rgba(17,17,17,0.05)] rounded-lg pt-2.5 pr-4 pb-2.5 pl-4 flex flex-row gap-2 items-center justify-start shrink-0 relative">
+                  <div class="shrink-0 w-6 h-6 relative overflow-hidden">
+                    <img class="h-[auto] absolute left-0 top-0 overflow-visible" src="currency2.svg"/>
+                  </div>
+                  <div id="currentDonationAmount" class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Regular',_sans-serif] text-base font-normal relative">0 BDT</div>
+                </div>
+                <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+                  <div class="text-[#111111] text-left font-['Lexend-Bold',_sans-serif] text-xl leading-[30px] font-bold relative self-stretch">Donate for Flood at Noakhali, Bangladesh</div>
+                  <div class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Light',_sans-serif] text-base leading-[26px] font-light relative self-stretch">
+                    The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+                <div class="bg-[#ffffff] rounded-lg border-solid border-[rgba(17,17,17,0.10)] border p-[18px] flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative">
+                  <div class="text-[rgba(17,17,17,0.40)] text-left font-['Lexend-Light',_sans-serif] text-base font-light relative w-[179px]">
+                    <label for="donationAmount">:</label>
+                    <input type="number" min="0" id="donationAmount" placeholder="Write Donation Amount:" required>
+                  </div>
+                </div>
+                <div class="bg-[#b4f461] rounded-lg pt-4 pr-8 pb-4 pl-8 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+                  <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">
+                    <button type="button" id="donateButton">Donate Now</button>
+                  </div>
+                </div>
+                <div id="error" class="text-red-500 mt-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-6 items-center justify-start self-stretch shrink-0 h-[505px] relative"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-row gap-6 items-center justify-start self-stretch shrink-0 relative">
+    <div class="bg-[#ffffff] rounded-2xl border-solid border-[rgba(17,17,17,0.10)] border p-8 flex flex-row gap-8 items-start justify-start flex-1 relative">
+      <img class="rounded-xl self-stretch flex-1 relative" style="object-fit: cover" src="feni.png"/>
+      <div class="flex flex-col gap-6 items-start justify-start flex-1 relative">
+        <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+          <div class="bg-[rgba(17,17,17,0.05)] rounded-lg pt-2.5 pr-4 pb-2.5 pl-4 flex flex-row gap-2 items-center justify-start shrink-0 relative">
+            <div class="shrink-0 w-6 h-6 relative overflow-hidden">
+              <img class="h-[auto] absolute left-0 top-0 overflow-visible" src="currency2.svg"/>
+            </div>
+            <div id="currentDonationAmount2" class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Regular',_sans-serif] text-base font-normal relative">0 BDT</div>
+          </div>
+          <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+            <div class="text-[#111111] text-left font-['Lexend-Bold',_sans-serif] text-xl leading-[30px] font-bold relative self-stretch">Donate for Cyclone Relief at Barisal, Bangladesh</div>
+            <div class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Light',_sans-serif] text-base leading-[26px] font-light relative self-stretch">
+              The recent cyclone in Barisal has caused extensive damage. Your donation will help provide essential aid to those affected. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+          <div class="bg-[#ffffff] rounded-lg border-solid border-[rgba(17,17,17,0.10)] border p-[18px] flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative">
+            <div class="text-[rgba(17,17,17,0.40)] text-left font-['Lexend-Light',_sans-serif] text-base font-light relative w-[179px]">
+              <label for="donationAmount2">:</label>
+              <input type="number" min="0" id="donationAmount2" placeholder="Write Donation Amount:" required>
+            </div>
+          </div>
+          <div class="bg-[#b4f461] rounded-lg pt-4 pr-8 pb-4 pl-8 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+            <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">
+              <button type="button" id="donateButton2">Donate Now</button>
+            </div>
+          </div>
+          <div id="error2" class="text-red-500 mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="flex flex-row gap-6 items-center justify-start self-stretch shrink-0 relative">
+    <div class="bg-[#ffffff] rounded-2xl border-solid border-[rgba(17,17,17,0.10)] border p-8 flex flex-row gap-8 items-start justify-start flex-1 relative">
+      <img class="rounded-xl self-stretch flex-1 relative" style="object-fit: cover" src="quota-protest.png"/>
+      <div class="flex flex-col gap-6 items-start justify-start flex-1 relative">
+        <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+          <div class="bg-[rgba(17,17,17,0.05)] rounded-lg pt-2.5 pr-4 pb-2.5 pl-4 flex flex-row gap-2 items-center justify-start shrink-0 relative">
+            <div class="shrink-0 w-6 h-6 relative overflow-hidden">
+              <img class="h-[auto] absolute left-0 top-0 overflow-visible" src="currency2.svg"/>
+            </div>
+            <div id="currentDonationAmount3" class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Regular',_sans-serif] text-base font-normal relative">0 BDT</div>
+          </div>
+          <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+            <div class="text-[#111111] text-left font-['Lexend-Bold',_sans-serif] text-xl leading-[30px] font-bold relative self-stretch">   Aid for injured at Quota, Movement, Bangladesh</div>
+            <div class="text-[rgba(17,17,17,0.70)] text-left font-['Lexend-Light',_sans-serif] text-base leading-[26px] font-light relative self-stretch">
+              The recent Quota Movement in Dhaka has caused significant damage. Your donation will help provide essential supplies and aid to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 items-start justify-start self-stretch shrink-0 relative">
+          <div class="bg-[#ffffff] rounded-lg border-solid border-[rgba(17,17,17,0.10)] border p-[18px] flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative">
+            <div class="text-[rgba(17,17,17,0.40)] text-left font-['Lexend-Light',_sans-serif] text-base font-light relative w-[179px]">
+              <label for="donationAmount3">:</label>
+              <input type="number" min="0" id="donationAmount3" placeholder="Write Donation Amount:" required>
+            </div>
+          </div>
+          <div class="bg-[#b4f461] rounded-lg pt-4 pr-8 pb-4 pl-8 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+            <div class="text-[#111111] text-left font-['Lexend-SemiBold',_sans-serif] text-xl font-semibold relative">
+              <button type="button" id="donateButton3">Donate Now</button>
+            </div>
+          </div>
+          <div id="error3" class="text-red-500 mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+
+
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const initialAmount = 98600; // Your initial total amount
+    let savedTotalAmount = localStorage.getItem('currentTotalAmount');
+    let savedDonationAmount1 = localStorage.getItem('currentDonationAmount1');
+    let savedDonationAmount2 = localStorage.getItem('currentDonationAmount2');
+    let savedDonationAmount3 = localStorage.getItem('currentDonationAmount3');
+    let totalAmount = savedTotalAmount ? parseFloat(savedTotalAmount) : initialAmount;
+    let donationAmount1 = savedDonationAmount1 ? parseFloat(savedDonationAmount1) : 0;
+    let donationAmount2 = savedDonationAmount2 ? parseFloat(savedDonationAmount2) : 0;
+    let donationAmount3 = savedDonationAmount3 ? parseFloat(savedDonationAmount3) : 0;
+
+    document.getElementById('navbarAmount').textContent = `${totalAmount} BDT`;
+    document.getElementById('currentDonationAmount').textContent = `${donationAmount1} BDT`;
+    document.getElementById('currentDonationAmount2').textContent = `${donationAmount2} BDT`;
+    document.getElementById('currentDonationAmount3').textContent = `${donationAmount3} BDT`;
+});
+
+document.getElementById('donateButton').addEventListener('click', function() {
+    const donationInput1 = document.getElementById('donationAmount').value;
+    const donationAmount1 = parseFloat(donationInput1);
+    const errorDiv1 = document.getElementById('error');
+    const currentDonationAmountDiv1 = document.getElementById('currentDonationAmount');
+    const navbarAmountDiv = document.getElementById('navbarAmount');
+    let totalAmount = parseFloat(navbarAmountDiv.textContent);
+    let currentDonation1 = parseFloat(currentDonationAmountDiv1.textContent);
+
+    // Clear any previous error messages
+    errorDiv1.textContent = '';
+
+    // Validate input
+    if (isNaN(donationAmount1) || donationAmount1 <= 0) {
+        errorDiv1.textContent = 'Please enter a valid positive number.';
+    } else {
+        // Update the amounts
+        const newTotalAmount = totalAmount - donationAmount1;
+        const newDonationAmount1 = currentDonation1 + donationAmount1;
+
+        // Save the new amounts to localStorage
+        localStorage.setItem('currentTotalAmount', newTotalAmount);
+        localStorage.setItem('currentDonationAmount1', newDonationAmount1);
+
+        // Save donation data
+        localStorage.setItem('donationData1', JSON.stringify({
+            amount: donationAmount1,
+            date: new Date().toString()
+        }));
+
+        // Update the display
+        navbarAmountDiv.textContent = `${newTotalAmount} BDT`;
+        currentDonationAmountDiv1.textContent = `${newDonationAmount1} BDT`;
+
+        window.location.href = 'history.html';
+    }
+});
+
+document.getElementById('donateButton2').addEventListener('click', function() {
+    const donationInput2 = document.getElementById('donationAmount2').value;
+    const donationAmount2 = parseFloat(donationInput2);
+    const errorDiv2 = document.getElementById('error2');
+    const currentDonationAmountDiv2 = document.getElementById('currentDonationAmount2');
+    const navbarAmountDiv = document.getElementById('navbarAmount');
+    let totalAmount = parseFloat(navbarAmountDiv.textContent);
+    let currentDonation2 = parseFloat(currentDonationAmountDiv2.textContent);
+
+    // Clear any previous error messages
+    errorDiv2.textContent = '';
+
+    // Validate input
+    if (isNaN(donationAmount2) || donationAmount2 <= 0) {
+        errorDiv2.textContent = 'Please enter a valid positive number.';
+    } else {
+        // Update the amounts
+        const newTotalAmount = totalAmount - donationAmount2;
+        const newDonationAmount2 = currentDonation2 + donationAmount2;
+
+        // Save the new amounts to localStorage
+        localStorage.setItem('currentTotalAmount', newTotalAmount);
+        localStorage.setItem('currentDonationAmount2', newDonationAmount2);
+
+        // Save donation data
+        localStorage.setItem('donationData2', JSON.stringify({
+            amount: donationAmount2,
+            date: new Date().toString()
+        }));
+
+        // Update the display
+        navbarAmountDiv.textContent = `${newTotalAmount} BDT`;
+        currentDonationAmountDiv2.textContent = `${newDonationAmount2} BDT`;
+
+        window.location.href = 'history.html';
+    }
+});
+
+document.getElementById('donateButton3').addEventListener('click', function() {
+    const donationInput3 = document.getElementById('donationAmount3').value;
+    const donationAmount3 = parseFloat(donationInput3);
+    const errorDiv3 = document.getElementById('error3');
+    const currentDonationAmountDiv3 = document.getElementById('currentDonationAmount3');
+    const navbarAmountDiv = document.getElementById('navbarAmount');
+    let totalAmount = parseFloat(navbarAmountDiv.textContent);
+    let currentDonation3 = parseFloat(currentDonationAmountDiv3.textContent);
+
+    // Clear any previous error messages
+    errorDiv3.textContent = '';
+
+    // Validate input
+    if (isNaN(donationAmount3) || donationAmount3 <= 0) {
+        errorDiv3.textContent = 'Please enter a valid positive number.';
+    } else {
+        // Update the amounts
+        const newTotalAmount = totalAmount - donationAmount3;
+        const newDonationAmount3 = currentDonation3 + donationAmount3;
+
+        // Save the new amounts to localStorage
+        localStorage.setItem('currentTotalAmount', newTotalAmount);
+        localStorage.setItem('currentDonationAmount3', newDonationAmount3);
+
+        // Save donation data
+        localStorage.setItem('donationData3', JSON.stringify({
+            amount: donationAmount3,
+            date: new Date().toString()
+        }));
+
+        // Update the display
+        navbarAmountDiv.textContent = `${newTotalAmount} BDT`;
+        currentDonationAmountDiv3.textContent = `${newDonationAmount3} BDT`;
+
+        window.location.href = 'history.html';
+    }
+});
+
+
+
+
+
+
+
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* Add shadow to the button */
+.shadow-button {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Increase shadow on hover */
+.shadow-button:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
